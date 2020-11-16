@@ -24,19 +24,40 @@ header p {
   font-size: 22px;
   color: #ffffff;
 }
-.banner {
-  background: url(./assets/banner.png);
-  max-width: 100%;
-  height: auto;
-  position: relative;
-}
-/* .banner-image {
-  background-position: center;
-  background-repeat: no-repeat;
+.container {
+  background-image: url(./assets/banner.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
 }
-.banner-image img {
-  width: 100%;
-  height: auto;
+.card-section {
+  display: grid;
+  align-content: center;
+  justify-items: center;
 }
- */
+.card-body {
+  top: 0;
+  background-color: #9c020480;
+  text-align: center;
+}
+/* .card-body img {
+  margin-top: 20px;
+  width: 526px;
+  height: 754px;
+} */
+.top-description {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0px;
+}
+.description {
+  color: #f0f0f2;
+  text-shadow: 0px 3px 6px #00000029;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  opacity: 1;
+}
