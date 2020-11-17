@@ -296,9 +296,9 @@ input {
   font-size: 40px;
 }
 .scroll-to-top {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
+  margin-top: 98px;
+  margin-right: 143px;
+  float: right;
   width: 100px;
   height: 100px;
   border-radius: 50%;
