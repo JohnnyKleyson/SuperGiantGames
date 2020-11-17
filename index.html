@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transistor | Characters</title>
     <link rel="shortcut icon" href="./assets/Imagem card-1.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Google icons-->
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <div class="logo-container">
             <img src="./assets/logo.png"class="logo">
@@ -27,10 +28,13 @@
             </div>
         </div>
     </div> <!--Banner-->
+
     <div class="symbol">
         <p>.</p>
     </div>
+    
     <div class="container">
+
         <div class="characters">
             <div class="imgBx">
                 <img src="./assets/Grant.png" class="image-top">
@@ -53,29 +57,36 @@
                 <p class="content">Sybil é descrita pelo Transistor como sendo os "olhos e ouvidos" da Camerata.</p>
             </div>
         </div>
-    </div>
+        <div class="arrow-right"></div>
+    </div> <!--Card Section-->
     
     <div class="green">
-        <!-- <div class="formulario">
-            <div class="form-content">
-                <h1>FORMULÁRIO</h1>
-                 <p class="form-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <form action="GET">
-                <input type="text">
-                <input type="email" name="" id="">
-                <textarea placeholder="Mensagem"></textarea>
-                <input type="button" value="ENVIAR">
-            </form>
-            </div>
+        <div class="bg">
+            <div class="bg-content">
+            <h2 class="form-title">FORMULÁRIO</h2>
+            <p class="form-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div id="error_message"></div>
             
-        </div> -->
+            <form  id="myForm" onsubmit="return validate();">
+                <input type="text" placeholder="Nome"  class="input" id="name">
+                <input type="email" placeholder="Email"  id="email">
+                <textarea placeholder="Mensagem" class="form-textarea" ></textarea >
+                <input type="submit" value="ENVIAR" class="btn-sbmt">
+            </form>
+        </div><!--Form Section-->
     </div>
-    
+
+    </div><!--Empty Green Section-->
+
+   
+
     <div class="footer">
         <button class="scroll-to-top">
-            <i class="material-icons">keyboard_arrow_up</i>
+            <i class="material-icons">keyboard_arrow_up</i> <!--Scroll to Top Button-->
         </button>
-    </div>
+        
+    </div><!--Footer-->
     
 
 <script src="./script.js"></script>

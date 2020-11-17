@@ -1,9 +1,10 @@
+/*Basics Page Config*/
 * {
   margin: 0;
   padding: 0;
 }
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-html{
+html {
   scroll-behavior: smooth;
 }
 /*HEADER*/
@@ -59,14 +60,14 @@ header p {
 .description {
   padding: 20px;
   text-shadow: 0px 3px 6px #00000029;
-  color: #F0F0F2;
+  color: #f0f0f2;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   text-align: center;
   opacity: 1;
   padding-bottom: 40px;
 }
-.symbol{
+.symbol {
   text-align: center;
   width: 28px;
   height: 47px;
@@ -76,7 +77,7 @@ header p {
   transform: translateY(-50%) translateX(-50%);
   border-radius: 124px;
   background-color: white;
-  }
+}
 
 /*CARDS SESSIONS*/
 .container {
@@ -99,10 +100,6 @@ header p {
   display: flex;
   flex-direction: column;
 }
-/* .container .characters .content {
-  margin-top: -140px;
-  padding: 10px 15px;
-  text-align: center; */
 
 .content {
   font-family: "Open Sans", sans-serif;
@@ -118,55 +115,130 @@ header p {
   max-width: 100%;
   border-radius: 99px;
 }
+.arrow-left {
+  color: red;
+  width: 6vmin;
+  height: 6vmin;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotate(-135deg);
+}
+
 /*GREEN DIV*/
-.green{
+.green {
   width: 100%;
   height: 713px;
-  background-image: linear-gradient(to right, #7DEDE2,#58B790);
+  background-image: linear-gradient(to right, #7dede2, #58b790);
 }
-.footer{
+.footer {
   background-color: #363636;
   width: 100%;
   height: 410px;
 }
-/*FORM*/
-h1{
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 35px;
-  letter-spacing: -0.88px;
-  color: #63C7A9;
-  margin-bottom: 40px;
-  
-}
-.form-description{
-  text-align: left;
-}
-.form-content{
-  background-color: red;
-  text-align: center;
 
-}
-.formulario{
-  font-family: 'Open Sans', sans-serif;
-  color: #363636;
- border-radius: 50px;
-  margin: 0 auto;
-  width: 1080px;
-  height: 800px;
-  display
+/*FORM*/
+.bg {
   position: absolute;
-  padding: 80px 120px;
-  background-color: white;
-  
+  background-color: #ffffff;
+  border-radius: 10px;
+  top: 1790px;
+  width: 1082px;
+  height: 800px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
+.bg-content {
+  padding: 80px 143px 155px 193px;
+}
+
+.form-title {
+  letter-spacing: -0.88px;
+  margin-bottom: 41px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  color: #63c7a9;
+}
+
+.form-description {
+  margin-bottom: 51px;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  color: #363636;
+}
+
+input {
+  width: 248px;
+  height: 48px;
+  font-family: "Open Sans", sans-serif;
+  color: #363636;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  border-color: #363636;
+  padding: 15px;
+  display: inline-block;
+  border: 1px solid #363636;
+  opacity: 1;
+}
+
+.form-textarea {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: #363636;
+  font-size: 18px;
+  border-color: #363636;
+  resize: none;
+  display: block;
+  overflow: hidden;
+  height: 197px;
+  width: 520px;
+  border: 1px solid #363636;
+  opacity: 1;
+  margin-bottom: 48px;
+}
+.btn-sbmt {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 11px 85px 17px 90px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+  background: #63c7a9 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border: none;
+}
+.btn-sbmt:hover {
+  background: #3fb692;
+}
+#error_message {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e23737;
+  margin-bottom: 20px;
+  padding: 0px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
 /*FOOTER*/
-.material-icons{
+.material-icons {
   font-weight: 200;
   font-size: 40px;
 }
-.scroll-to-top{
-
+.scroll-to-top {
   position: fixed;
   right: 10px;
   bottom: 10px;
@@ -178,36 +250,32 @@ h1{
   border: none;
   cursor: pointer;
 }
-.scroll-to-top:active{
+.scroll-to-top:active {
   background: #dadada;
 }
 
 /*MEDIAS QUERIES*/
-@media screen and (max-width: 600px){
-  .scroll-to-top{
+@media screen and (max-width: 600px) {
+  .scroll-to-top {
     width: 50px;
     height: 50px;
   }
 }
 @media screen and (max-width: 570px) {
-  .card-body img{
+  .card-body img {
     width: 100%;
     height: auto;
   }
-
 }
 
 @media screen and (max-width: 400px) {
-  .title{
+  .title {
     display: none;
   }
-  .top-description{
+  .top-description {
     text-align: center;
   }
-  .description{
+  .description {
     font-size: 17px;
   }
-
 }
-
-
