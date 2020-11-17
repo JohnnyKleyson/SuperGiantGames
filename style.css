@@ -116,6 +116,26 @@ header p {
   }
 }
 
+/*Arrows*/
+.left,
+.right {
+  margin: 35px;
+
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+  box-shadow: -2px 2px 0 rgb(255, 255, 255);
+  cursor: pointer;
+}
+.right {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.left {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 /*CARDS SESSIONS*/
 .container {
   background-color: #363636;
