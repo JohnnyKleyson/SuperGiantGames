@@ -144,9 +144,9 @@ header p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 28px;
 }
-.container .characters {
+.characters {
   border-radius: 27px;
   position: relative;
   max-width: 300px;
@@ -171,16 +171,6 @@ header p {
   background-color: #363636;
   max-width: 100%;
   border-radius: 99px;
-}
-.arrow-left {
-  color: red;
-  width: 6vmin;
-  height: 6vmin;
-  box-sizing: border-box;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: rotate(-135deg);
 }
 
 /*GREEN DIV*/
@@ -318,20 +308,33 @@ input {
 @media screen and (max-width: 1185px) {
   .bg {
     position: static;
+    top: auto;
+    width: 100%;
+    height: auto;
   }
 }
 @media screen and (max-width: 1085px) {
   .bg {
-    top: auto;
-    width: 100%;
-    height: auto;
   }
   form {
     display: flex;
     flex-direction: column;
   }
+  .green {
+    width: 100%;
+    height: auto;
+  }
+  .form-textarea {
+    width: 100%;
+    height: auto;
+  }
 }
-
+@media screen and (max-width: 600px) {
+  .bg-content {
+    padding: 50px;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 1434px) {
   .left,
   .right {
@@ -340,6 +343,8 @@ input {
 }
 
 @media screen and (max-width: 600px) {
+  .bg-content {
+  }
   .scroll-to-top {
     width: 50px;
     height: 50px;
