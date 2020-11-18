@@ -7,6 +7,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 /*HEADER*/
 header {
   display: flex;
@@ -96,7 +97,6 @@ header p {
 .scroll-down::before {
   top: 30%;
   animation-delay: 0.3s;
-  /* animation: scroll-down 1s ease-in-out infinite; */
 }
 
 @keyframes scroll-down {
@@ -136,6 +136,7 @@ header p {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
 /*CARDS SESSIONS*/
 .container {
   background-color: #363636;
@@ -240,13 +241,6 @@ input {
 .form-textarea {
   padding-bottom: 145px;
   box-sizing: border-box;
-  /*   padding: 12px; */
-  /*   font-family: "Open Sans", sans-serif; */
-  /*   color: #363636; */
-  /*  font-size: 18px;
-  border-color: #363636;
-  resize: none; */
-  /*   display: block; */
   height: 197px;
   width: 528px;
   border: 1px solid #363636;
@@ -255,10 +249,8 @@ input {
 }
 .btn-sbmt {
   display: block;
-  /*   margin-left: 100px; */
   cursor: pointer;
   font-size: 18px;
-  /*  text-align: center; */
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0px;
   color: #ffffff;

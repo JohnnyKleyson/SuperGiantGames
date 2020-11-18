@@ -5,7 +5,7 @@ btnScrollTop.addEventListener("click", function(){
 })
 
 
-//Set page to not Refresh
+//Set page to not refresh when submit the form
 
 var form = document.getElementById("myForm");
 function handleForm(event) { event.preventDefault(); } 
@@ -24,12 +24,12 @@ function validate(){
     
     var text;
     if(name.length < 3){
-      text = "Por favor insira um nome.";
+      text = "Por favor insira um nome";
       error_message.innerHTML = text;
       return false;
     }
     if(email.indexOf("@") == -1 || email.length < 6){
-      text = "Por favor ensira um email válido";
+      text = "Por favor insira um email válido";
       error_message.innerHTML = text;
       return false;
     }
@@ -39,7 +39,7 @@ function validate(){
       return false;
     }
     if(message.length <5 ){
-      text = "Por favor escreva um pouco mais";
+      text = "Por favor escreva mais um pouco";
       error_message.innerHTML = text;
       return false;
     }
