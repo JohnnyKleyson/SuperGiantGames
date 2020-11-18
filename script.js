@@ -1,7 +1,13 @@
-//Scroll to Top Button fixed on screen
+//Scroll to Top Button 
 const btnScrollTop = document.querySelector(".scroll-to-top");
 btnScrollTop.addEventListener("click", function(){
     window.scrollTo(0,0);
+})
+
+//Scroll to Bottom Button 
+const btnScrollBottom = document.querySelector(".scroll-down");
+btnScrollBottom.addEventListener("click", function(){
+  window.scrollTo(0,document.body.scrollHeight);
 })
 
 
